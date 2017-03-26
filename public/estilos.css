@@ -1,0 +1,24 @@
+
+
+.cat-element{
+	border:solid 1px #999;
+	height: 100px;
+}
+#contChat{
+	    position: absolute;
+    top: 0;
+    border: solid;
+    height: 250px;
+    width: 260px;
+}
+#formul{
+	    position: relative;
+    top: 7px;
+    border: solid;
+}
+#chatM{
+	    border: solid 1px purple;
+    position: relative;
+    height: 205px;
+    overflow: overlay;
+}
