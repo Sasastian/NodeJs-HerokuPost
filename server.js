@@ -1,7 +1,7 @@
 var express = require("express");
 var http = require("http");
 var app = require("./socket_express");
-
+var port = process.env.PORT || 3000;
 
 
 app.use("/static",express.static("public"));
@@ -15,4 +15,6 @@ var server = http.createServer(app);
 
 app.io.attach(server);
 
-server.listen(8080);
+server.listen(port, function () {
+  console.log('Aplicacion escuchando en el puerto: ' + port)
+});
